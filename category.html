@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Category</title>
+
+    <link rel="stylesheet"
+    href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="nav-left">
+
+            <!-- LEFT SIDEBAR BUTTON -->
+
+            <button class="menu-btn"
+            id="menuBtn">
+
+                ☰
+
+            </button>
+
+            <a href="index.html">
+
+                <img src="images/WhatsApp_Image_2026-05-13_at_11.03.58_PM-removebg-preview.png"
+                class="nav-logo">
+
+            </a>
+
+        </div>
+
+        <!-- CART ICON -->
+
+        <div class="cart-icon"
+        onclick="toggleCart()">
+
+            🛒
+
+            <span class="cart-count"
+            id="cartCount">
+
+                0
+
+            </span>
+
+        </div>
+
+    </nav>
+
+    <!-- LEFT SIDEBAR -->
+
+    <div class="sidebar collapsed"
+    id="sidebar">
+
+        <ul>
+
+            <li>
+                <a href="home.html#home">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="home.html#categories">
+                    Categories
+                </a>
+            </li>
+
+            <li>
+                <a href="home.html#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- OVERLAY -->
+
+    <div class="overlay"
+    id="overlay"></div>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="container">
+
+        <div class="categories">
+
+            <h1 id="categoryTitle"></h1>
+
+            <div class="products"
+            id="productsContainer">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT CART SIDEBAR -->
+
+<!-- RIGHT CART SIDEBAR -->
+
+<div class="cart-sidebar">
+
+    <h2>Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <!-- CART FOOTER -->
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <span id="cartTotal">
+
+                ₹0
+
+            </span>
+
+        </div>
+
+        <button class="whatsapp-order-btn"
+        onclick="placeOrder()">
+
+            Place Order on WhatsApp
+
+        </button>
+
+    </div>
+
+</div>
+
+    <!-- SCRIPTS -->
+
+    <script src="products.js"></script>
+
+    <script src="cart.js"></script>
+
+    <script src="category.js"></script>
+
+    <!-- LEFT SIDEBAR JS -->
+
+    <script>
+
+    const menuBtn =
+    document.getElementById("menuBtn");
+
+    const sidebar =
+    document.getElementById("sidebar");
+
+    const overlay =
+    document.getElementById("overlay");
+
+    menuBtn.addEventListener("click", () => {
+
+        const isCollapsed =
+        sidebar.classList.contains("collapsed");
+
+        if(isCollapsed){
+
+            /* Close cart if open */
+
+            document.body.classList.remove("cart-open");
+
+            sidebar.classList.remove("collapsed");
+
+            overlay.classList.add("active");
+
+        } else {
+
+            sidebar.classList.add("collapsed");
+
+            overlay.classList.remove("active");
+        }
+    });
+
+    overlay.addEventListener("click", () => {
+
+        /* Closes whichever sidebar is open */
+
+        sidebar.classList.add("collapsed");
+
+        document.body.classList.remove("cart-open");
+
+        overlay.classList.remove("active");
+    });
+
+</script>
+
+</body>
+
+</html>
