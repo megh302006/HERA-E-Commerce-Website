@@ -79,6 +79,11 @@ filteredProducts.forEach(product => {
     container.appendChild(card);
 
     if(imageList.length <= 1) return;
+    /* Preload all images so first hover is smooth */
+    imageList.slice(1).forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
 
     const imgBase =
     card.querySelector(".img-base");
