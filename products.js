@@ -18,7 +18,7 @@ const products = [
     {
         id:2,
         category:"bags",
-        name:"Office Messenger Bag 2",
+        name:"Classic Leather Tote Bag 2",
         description:"Durable leather office bag with premium finishing and storage.",
         price:3199,
         image:"images/bagPlaceholder.webp",
@@ -32,6 +32,36 @@ const products = [
 
     {
         id:3,
+        category:"bags",
+        name:"Classic Leather Tote Bag 3",
+        description:"Durable leather office bag with premium finishing and storage.",
+        price:3199,
+        image:"images/bagPlaceholder.webp",
+        images:[
+        "images/bagPlaceholder.webp", 
+        "images/beltPlaceholder.avif",
+        "images/pursePlaceholder.webp",
+        "images/walletPlaceholder.webp"
+        ]
+    },
+
+    {
+        id:4,
+        category:"bags",
+        name:"Classic Leather Tote Bag 4",
+        description:"Durable leather office bag with premium finishing and storage.",
+        price:3199,
+        image:"images/bagPlaceholder.webp",
+        images:[
+        "images/bagPlaceholder.webp", 
+        "images/beltPlaceholder.avif",
+        "images/pursePlaceholder.webp",
+        "images/walletPlaceholder.webp"
+        ]
+    },
+
+    {
+        id:5,
         category:"purses",
         name:"Elegant Purse 1",
         description:"Elegant leather purse.",
@@ -46,7 +76,7 @@ const products = [
     },
 
     {
-        id:4,
+        id:6,
         category:"purses",
         name:"Elegant Purse 2",
         description:"Elegant leather purse.",
@@ -61,7 +91,37 @@ const products = [
     },
 
     {
-        id:5,
+        id:7,
+        category:"purses",
+        name:"Elegant Purse 3",
+        description:"Elegant leather purse.",
+        price:2299,
+        image:"images/pursePlaceholder.webp",
+        images:[
+        "images/pursePlaceholder.webp",
+        "images/bagPlaceholder.webp", 
+        "images/beltPlaceholder.avif",
+        "images/walletPlaceholder.webp"
+        ]
+    },
+
+    {
+        id:8,
+        category:"purses",
+        name:"Elegant Purse 4",
+        description:"Elegant leather purse.",
+        price:2299,
+        image:"images/pursePlaceholder.webp",
+        images:[
+        "images/pursePlaceholder.webp",
+        "images/bagPlaceholder.webp", 
+        "images/beltPlaceholder.avif",
+        "images/walletPlaceholder.webp"
+        ]
+    },
+
+    {
+        id:9,
         category:"wallets",
         name:"Classic Wallet 1",
         description:"Slim handcrafted leather wallet.",
@@ -76,7 +136,7 @@ const products = [
     },
 
     {
-        id:6,
+        id:10,
         category:"wallets",
         name:"Classic Wallet 2",
         description:"Slim handcrafted leather wallet.",
@@ -91,7 +151,37 @@ const products = [
     },
 
     {
-        id:7,
+        id:11,
+        category:"wallets",
+        name:"Classic Wallet 3",
+        description:"Slim handcrafted leather wallet.",
+        price:1499,
+        image:"images/walletPlaceholder.webp",
+        images:[
+        "images/walletPlaceholder.webp",
+        "images/bagPlaceholder.webp", 
+        "images/beltPlaceholder.avif",
+        "images/pursePlaceholder.webp"
+        ]
+    },
+
+    {
+        id:12,
+        category:"wallets",
+        name:"Classic Wallet 4",
+        description:"Slim handcrafted leather wallet.",
+        price:1499,
+        image:"images/walletPlaceholder.webp",
+        images:[
+        "images/walletPlaceholder.webp",
+        "images/bagPlaceholder.webp", 
+        "images/beltPlaceholder.avif",
+        "images/pursePlaceholder.webp"
+        ]
+    },
+
+    {
+        id:13,
         category:"belts",
         name:"Formal Belt 1",
         description:"Premium formal leather belt.",
@@ -106,9 +196,39 @@ const products = [
     },
 
     {
-        id:8,
+        id:14,
         category:"belts",
         name:"Formal Belt 2",
+        description:"Premium formal leather belt.",
+        price:1299,
+        image:"images/beltPlaceholder.avif",
+        images:[
+        "images/beltPlaceholder.avif",
+        "images/bagPlaceholder.webp",
+        "images/pursePlaceholder.webp",
+        "images/walletPlaceholder.webp"
+        ]
+    },
+
+    {
+        id:15,
+        category:"belts",
+        name:"Formal Belt 3",
+        description:"Premium formal leather belt.",
+        price:1299,
+        image:"images/beltPlaceholder.avif",
+        images:[
+        "images/beltPlaceholder.avif",
+        "images/bagPlaceholder.webp",
+        "images/pursePlaceholder.webp",
+        "images/walletPlaceholder.webp"
+        ]
+    },
+
+    {
+        id:16,
+        category:"belts",
+        name:"Formal Belt 4",
         description:"Premium formal leather belt.",
         price:1299,
         image:"images/beltPlaceholder.avif",
